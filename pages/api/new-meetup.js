@@ -14,9 +14,6 @@ async function handler(req, res) {
       const dataCollection = db.collection('meetups');
 
       const result = await dataCollection.insertOne(data);
-
-      console.log(result);
-
       client.close();
 
       res.status(201).json({ message: 'Meetup inseted', status: 201 });
