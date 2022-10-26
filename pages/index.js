@@ -38,7 +38,7 @@ export async function getStaticProps() {
         id: meetup._id.toString(),
       })),
     },
-    revalidate: 5,
+    revalidate: 1,
     // revalidate: 12, // takes seconds as input. after that time , page will be again pre-rendered
   };
 }
